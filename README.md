@@ -1,2 +1,9 @@
-# aral-forum
-Addressing academic inquiries together
+# name?? aral-forum
+an academic information exchange platform 
+
+
+# About
+
+
+
+# Feature
