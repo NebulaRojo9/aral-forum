@@ -1,2 +1,2 @@
 # aral-forum
-Bringing academic questions together
+Addressing academic inquiries together
