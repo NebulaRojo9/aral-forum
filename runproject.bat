@@ -1,0 +1,1 @@
+start /d frontend npm run dev
