@@ -1,0 +1,156 @@
+
+#auth-page-container {
+    background-image:  url("../assets/night-city-01-blur.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0; /* eliminate white edges*/
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+#auth-page-container-left {
+    height: 100%;
+    width: 29%;
+    /* background-color: rgba(255, 100, 100, 0.5); */
+}
+
+#auth-page-container-center {
+    height: 100%;
+    width: 42%;
+    /* background-color: rgba(100, 255, 100, 0.5); */
+    display: flex;
+    flex-direction: column;
+}
+
+#auth-page-container-right {
+    height: 100%;
+    width: 29%;
+    /* background-color: rgba(100, 100, 255, 0.5); */
+}
+
+.auth-error-message {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 24px;
+    width: 90%;
+    height: auto;
+    background-color: var(--error-bg);
+    color: var(--error-text);
+    text-align: center;
+    font-size: 24px;
+    font-family: "Merriweather Sans", "Times New Roman";
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 20px;
+    border: 1px solid var(--error-border);
+}
+
+#auth-panel {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--panel-color);
+    box-shadow: var(--box-shadow-below);
+    margin-top: auto; /* pushes element to the bottom */
+}
+#auth-panel.login {
+    height: calc(var(--auth-panel-login-height)/1080 * 100%);
+}
+#auth-panel.create-user {
+    height: calc(var(--auth-panel-create-height)/1080 * 100%);
+}
+
+
+#auth-panel-header {
+    height: calc(var(--auth-panel-login-body-height) * 100%);
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: var(--box-shadow-below);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Freeman", sans-serif;
+    font-size: 64px;
+
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+#auth-panel-header.login {
+    background-color: var(--water-03);
+    color: var(--text-white);
+}
+#auth-panel-header.create-user {
+    background-color: var(--snow-03);
+    color: var(--text-black);
+}
+
+#auth-panel-body {
+    width: 100%;
+    justify-content: center;
+}
+#auth-panel-body.login {
+    height: calc((1 - var(--auth-panel-login-body-height)) * 100%);
+}
+#auth-panel-body.create-user {
+    height: calc((1 - var(--auth-panel-create-body-height)) * 100%);
+}
+
+form {
+    /*background-color: rgba(120, 120, 232, 0.4); */
+    width: 90%;
+    margin: auto;
+}
+
+label {
+    display: grid;
+    margin-top: 24px;
+    font-family: "Freeman", 'Times New Roman', Times, serif;
+    font-size: 32px;
+}
+
+input {
+    margin-top: 8px;
+    height: 1cm;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: var(--box-shadow-inner);
+    text-indent: 10px;
+    font-size: 16px;
+    padding: 2px;
+}
+
+
+#submit-button {
+    margin-top: 24px;
+    font-family: "Sniglet", "Courier New";
+    border-radius: 20px;
+    height: 1.25cm;
+    width: 100%;
+    font-size: 24px;
+    border: 0;
+    box-shadow: var(--box-shadow-below);
+}
+#submit-button.login {
+    background-color: var(--water-03);
+    color: var(--text-white);
+}
+#submit-button.create-user {
+    background-color: var(--snow-03);
+    color: var(--text-black);
+}
+
+#switch-line {
+    text-align: center;
+    width: 100%;
+    font-size: 22px;
+    margin-top: 12px;
+    font-family: "Merriweather Sans", "Times New Roman";
+}

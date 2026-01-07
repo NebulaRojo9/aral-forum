@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Freeman";
+    src: url("fonts/Freeman-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sniglet";
+    src: url("fonts/Sniglet-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url("fonts/static/MerriweatherSans-Light.ttf") format("truetype");
+}
+
+:root {
+    --water-01: #0F3375;
+    --water-02: #13459C;
+    --water-03: #1557C0;
+    --water-04: #196BDE;
+    --water-05: #2382F7;
+    --snow-01: #4B9CF9;
+    --snow-02: #77B6FB;
+    --snow-03: #A4CEFC;
+    --snow-04: #CCE4FD;
+    --snow-05: #E8F3FE;
+    --error-border: #FF3949; 
+    --error-text: #FF1919;
+    --error-bg: #FFD1D1;
+    --panel-color: #F0F0F0;
+    --box-shadow-below: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --box-shadow-inner: 0px -4px 4px rgba(0, 0, 0, 0.25);
+    --text-white: #FFFFFF;
+    --text-black: #000000;
+
+    --auth-panel-login-height: 870;
+    --auth-panel-login-header-height: 141;
+    --auth-panel-login-body-height: var(--auth-panel-login-header-height)/var(--auth-panel-login-height);
+    --auth-panel-create-height: 1039;
+    --auth-panel-create-header-height: 141;
+    --auth-panel-create-body-height: var(--auth-panel-create-header-height)/var(--auth-panel-create-height);
+
+}
+
+body {
+    background-color: #E8F3FE;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
