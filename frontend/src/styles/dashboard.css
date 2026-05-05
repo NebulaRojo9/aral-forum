@@ -1,0 +1,102 @@
+
+#dashboard-navbar {
+    height: calc(var(--main-area-navbar-height)/1110 * 100vh);
+    width: 100%;
+    background-color: var(--main-area-navbar-color);
+    box-shadow: var(--box-shadow-below);
+
+    display: flex;
+}
+
+#navbar-search-field {
+    display: flex;
+    /* background-color: blue; */
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar-search-box {
+    background-color: var(--navbar-search-color);
+    height: 50%;
+    width: 90%;
+    border-radius: 10px;
+    padding: 0;
+    display: flex;
+}
+
+
+#navbar-search-icon {
+    height: 100%;
+    width: 5%;
+    /* background-color: aqua; */
+    margin: 0em 0.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar-search {
+    padding: 0;
+    width: 90%;
+    height: 99%;
+    font-size: 1.3em;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+#navbar-buttons-field {
+    /*background-color: aquamarine; */
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-right: 1em;
+}
+
+.navbar-button {
+    border-radius: 10px; 
+    border: 0;
+    background-color: var(--navbar-button-bgcolor);
+
+    padding: 0.8em;
+    margin: 0.5em;
+    box-shadow: var(--box-shadow-below);
+    font-family: "Sniglet";
+}
+
+.navbar-button:hover {
+    background-color: var(--snow-03);
+}
+
+.navbar-button-active {
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--water-03);
+
+    padding: 0.8em;
+    box-shadow: var(--box-shadow-below);
+    font-family: "Sniglet";
+    color: white;
+}
+
+#dashboard-body {
+    height: 100%;
+    width: 100%;
+}
+
+.empty-room {
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    
+    text-align: center;
+    font-family: 'Merriweather Sans', 'Arial';
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 25%;
+    padding-top: 15%;
+}

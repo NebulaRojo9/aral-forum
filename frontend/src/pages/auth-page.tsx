@@ -4,6 +4,7 @@ import "../styles/auth.css";
 import "../styles/global.css";
 import { Outlet } from "react-router";
 
+
 export default function AuthPage() {
 
     return (

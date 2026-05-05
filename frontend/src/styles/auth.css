@@ -116,7 +116,7 @@ label {
     font-size: 32px;
 }
 
-input {
+.auth-input {
     margin-top: 8px;
     height: 1cm;
     border-radius: 10px;

@@ -1,4 +1,6 @@
 
+import { Link } from "react-router-dom";
+
 export default function CreateUser() {
     const createUserError = true;
     const createUserErrorMsg = "unknown error message";
@@ -11,12 +13,12 @@ export default function CreateUser() {
 
             <div id="auth-panel-body" className="create-user">
                 <form>
-                    <label>New username <input name="New Username"/></label>
-                    <label>New password <input name="New Password"/></label>
-                    <label>Confirm password <input name="Confirm Password"/></label>
+                    <label>New username <input className="auth-input" name="New Username"/></label>
+                    <label>New password <input className="auth-input" name="New Password"/></label>
+                    <label>Confirm password <input className="auth-input" name="Confirm Password"/></label>
                     <button type="submit" id="submit-button" className="create-user">Create</button>
                 </form>
-                <div id="switch-line">Already have an account? <strong>Click here</strong>.</div>
+                <div id="switch-line">Already have an account? <strong><Link to="/auth">Click here</Link></strong>.</div>
                  { createUserError ? (
                         <div className="auth-error-message">
                             {createUserErrorMsg}

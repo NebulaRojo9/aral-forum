@@ -42,7 +42,15 @@
     --auth-panel-create-header-height: 141;
     --auth-panel-create-body-height: var(--auth-panel-create-header-height)/var(--auth-panel-create-height);
 
+    --landing-navbar-width: 125;
+    --main-area-navbar-height: 135;
+
+    --main-area-navbar-color: #FEFEFE;
+    --navbar-search-color: #F0F0F0;
+    --navbar-button-bgcolor: #F0F0F0;
+    --navbar-search-height: 81/var(--main-area-navbar-height);
 }
+
 
 body {
     background-color: #E8F3FE;
