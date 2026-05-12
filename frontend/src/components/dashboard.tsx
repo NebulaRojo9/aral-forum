@@ -1,16 +1,16 @@
 
 import { useState } from 'react';
 
-import { Outlet } from 'react-router';
 import { useNavigate } from 'react-router-dom';
 import { Search, Plus, SquareArrowRight, House, HousePlus } from 'lucide-react';
+import RoomList from './room-list';
 import "../styles/dashboard.css";
 import "../styles/global.css";
 
 export default function Dashboard() {
     const [text, setText] = useState('');
     const [choice, setChoice] = useState('joined-rooms');
-    const navigate = useNavigate(); /* for buttons to link url in lieu of <Link /> */
+    /* const navigate = useNavigate(); for buttons to link url in lieu of <Link /> */
 
     const handleText = (
         event: React.ChangeEvent<HTMLInputElement>,
@@ -21,13 +21,10 @@ export default function Dashboard() {
     const buttonPress = (mode : string) => {
         if (mode === 'joined-rooms' ) {
             setChoice('joined-rooms')
-            navigate('/landing')
         }
         else if (mode === 'available-rooms') {
             setChoice('available-rooms')
-            navigate('/landing/avail-rooms')
         }
-        
     }
 
     return (
@@ -71,7 +68,7 @@ export default function Dashboard() {
                 </div>
             </div>
             <div id="dashboard-body">
-                <Outlet />
+                <RoomList mode={choice}/>
             </div>
         </>
     )

@@ -8,9 +8,6 @@ import LandingPage from "./pages/landing-page";
 import Login from "./components/login";
 import CreateUser from "./components/create-user";
 import Dashboard from "./components/dashboard";
-import JoinedRooms from './components/joined-rooms';
-import AvailRooms from './components/avail-rooms';
-
 
 
 const router = createBrowserRouter([
@@ -26,13 +23,7 @@ const router = createBrowserRouter([
     path: "/landing",
     Component: LandingPage,
     children: [
-      { path: "", 
-        Component: Dashboard,
-        children: [
-          { path: "", Component: JoinedRooms },
-          { path: "avail-rooms", Component: AvailRooms },
-        ]
-      },
+      { path: "", Component: Dashboard, },
     ],
   },
 ]);
